@@ -6,7 +6,7 @@ import (
 	"github.com/antlr/antlr4/runtime/Go/antlr"
 	"github.com/olekukonko/tablewriter"
 
-	"github.com/a-poor/cypher/parser"
+	"github.com/mdarin/cypher/parser"
 )
 
 func Parse(query string) *parser.CypherParser {

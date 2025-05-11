@@ -1,4 +1,4 @@
-module github.com/a-poor/cypher
+module github.com/mdarin/cypher
 
 go 1.17
 
