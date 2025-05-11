@@ -15,9 +15,11 @@ A Cypher query language parser for Go.
 
 Cypher grammar file obtained from the [openCypher website](https://opencypher.org/resources).
 
-Code generated with Antlr (version 4.7) via:
+Code generated with [Antlr](https://github.com/antlr/antlr4) (version 4.7 [docker image](https://hub.docker.com/r/leodido/antlr/)) via:
 
 ```bash
 $ antlr -Dlanguage=Go -o parser Cypher.g4
-```
+# in docker
+$ docker run --rm -v $(shell pwd):/build -w /build --user $(shell id -u):$(shell id -g) leodido/antlr:4.7 -Dlanguage=Go -o parser Cypher.g4
 
+```
